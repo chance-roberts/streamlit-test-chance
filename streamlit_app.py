@@ -19,9 +19,10 @@ abt = np.array(about_us)
 about = st.dataframe(data=abt)
 
 
-add_selectbox = st.sidebar.image(
-    "Meet the Team"
-)
+with st.sidebar:
+    st.header("Meet the Team")
+
+
 
 
 #Side bar area.
@@ -32,16 +33,7 @@ comp.write("Else")
 
 abt = st.expander("About the Team")
 #about_us = {'Picture': [],'Name': [], 'Major': []}
-abtdf = load_data()
-about = st.dataframe(data=abtdf)
 
-def load_images(dataframe):
-    for i in about_us:
-        image = Image.open(about_us[0:i])
-        st.image(image, caption = about_us[1:i])
-
-
-abt.write(load_images(abtdf))
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
