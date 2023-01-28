@@ -13,7 +13,7 @@ con.write("Inside container")
 
 
 def load_csv():
-    csv = pd.read_csv("TeamInformation.csv")
+    csv = np.loadtxt("TeamInformation.csv")
     st.write(csv)
     
 
