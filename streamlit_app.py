@@ -29,7 +29,7 @@ abt = load_csv()
 with st.sidebar:
     st.header("Meet the Team")
     for i in abt:
-        st.image(abt[0:i])
+        st.image(abt[0][0:i])
         st.caption("Test")
 
 
