@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 #Container located at top of UI.
 con = st.container()
@@ -7,22 +8,33 @@ con.write("Inside container")
 
 #Designer function to memorize dataframe display.
 #@st.experimental_memo #(show_spinner=True)
-#def load_data():
-    #return pd.read_csv("data/reddit_comments.csv")
+def load_data():
+    return pd.read_csv("C:\Users\chanc\OneDrive\Documents\GitHub\streamlit-test-chance")
 
 #Save load_data function into df var. access df in streamlit.
 #df = load_data()
-
+about_us = {'Name': [], 'Major': [], 'Picture': []}
+abt = pd.DataFrame(about_us)
+about = st.dataframe(data=abt)
 
 #Side bar area.
 scrbd = st.expander("Score breakdown")
 comp = st.expander("Comparison")
-abt = st.expander("About the Team")
-
-
 scrbd.write("Something")
 comp.write("Else")
-abt.write("Test")
+
+abt = st.expander("About the Team")
+#about_us = {'Picture': [],'Name': [], 'Major': []}
+abt = load_data()
+about = st.dataframe(data=abt)
+
+def load_images(dataframe):
+    for i in about_us:
+        image = Image.open(about_us[0:i])
+        st.image(image, caption = about_us[1:i])
+
+
+abt.write(load_images())
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
