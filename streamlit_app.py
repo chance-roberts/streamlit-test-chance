@@ -22,6 +22,7 @@ abt = np.array(load_csv())
 with st.sidebar:
     st.header("Meet the Team")
     for i in abt:
+        st.image(abt[0:i])
 
 
 
