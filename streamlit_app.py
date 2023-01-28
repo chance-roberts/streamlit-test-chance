@@ -17,6 +17,13 @@ about_us = {'Name': [], 'Major': [], 'Picture': []}
 abt = pd.DataFrame(about_us)
 about = st.dataframe(data=abt)
 
+
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+
+
 #Side bar area.
 scrbd = st.expander("Score breakdown")
 comp = st.expander("Comparison")
@@ -25,16 +32,7 @@ comp.write("Else")
 
 abt = st.expander("About the Team")
 #about_us = {'Picture': [],'Name': [], 'Major': []}
-abtdf = load_data()
-about = st.dataframe(data=abtdf)
 
-def load_images(dataframe):
-    for i in about_us:
-        image = Image.open(about_us[0:i])
-        st.image(image, caption = about_us[1:i])
-
-
-abt.write(load_images(abtdf))
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
