@@ -26,7 +26,7 @@ comp.write("Else")
 abt = st.expander("About the Team")
 #about_us = {'Picture': [],'Name': [], 'Major': []}
 abtdf = load_data()
-about = st.dataframe(data=abt)
+about = st.dataframe(data=abtdf)
 
 def load_images(dataframe):
     for i in about_us:
@@ -34,7 +34,7 @@ def load_images(dataframe):
         st.image(image, caption = about_us[1:i])
 
 
-abt.write(load_images(abt))
+abt.write(load_images(abtdf))
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
