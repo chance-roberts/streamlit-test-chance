@@ -25,7 +25,7 @@ comp.write("Else")
 
 abt = st.expander("About the Team")
 #about_us = {'Picture': [],'Name': [], 'Major': []}
-abt = load_data()
+abtdf = load_data()
 about = st.dataframe(data=abt)
 
 def load_images(dataframe):
