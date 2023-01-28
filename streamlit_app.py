@@ -23,7 +23,7 @@ def load_csv():
 #calls csv as nparray
 abt = load_csv()
 
-testimg = abt[1][0]
+testimg = Image.open(abt[1][0])
 
 #Sidebar for Meet the Team
 with st.sidebar:
