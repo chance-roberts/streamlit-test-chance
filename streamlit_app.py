@@ -10,16 +10,18 @@ con.write("Inside container")
 
 #Designer function to memorize dataframe display.
 #@st.experimental_memo #(show_spinner=True)
+
+
 def load_csv():
-    return np.loadtxt(pd.read_csv("TeamInformation.csv"))
-    
+    csv = pd.read_csv("TeamInformation.csv")
+    st.write(csv)
     
 
 
 
 
 #calls csv as nparray
-abt = np.array(load_csv())
+#abt = np.array(load_csv())
 
 
 
