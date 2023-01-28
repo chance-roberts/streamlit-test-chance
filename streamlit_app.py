@@ -21,7 +21,7 @@ def load_csv():
 
 
 #calls csv as nparray
-#abt = np.array(load_csv())
+abt = load_csv()
 
 
 
