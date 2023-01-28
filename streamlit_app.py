@@ -34,7 +34,7 @@ def load_images(dataframe):
         st.image(image, caption = about_us[1:i])
 
 
-abt.write(load_images())
+abt.write(load_images(abt))
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
