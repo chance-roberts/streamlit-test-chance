@@ -9,18 +9,21 @@ con.write("Inside container")
 
 #Designer function to memorize dataframe display.
 #@st.experimental_memo #(show_spinner=True)
-def load_data():
-    return pd.read_csv("data/TeamInformation.csv")
+def load_csv():
+    return np.loadtxt("data/TeamInformation.csv")
 
 #Save load_data function into df var. access df in streamlit.
 #df = load_data()
 about_us = {'Name': [], 'Major': [], 'Picture': []}
-abt = np.array(about_us)
-about = st.dataframe(data=abt)
+abt = np.array(load_csv())
+
 
 
 with st.sidebar:
     st.header("Meet the Team")
+    for i in abt:
+
+
 
 
 
