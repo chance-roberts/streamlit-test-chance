@@ -13,7 +13,7 @@ con.write("Inside container")
 
 
 def load_csv():
-    csv = np.loadtxt("TeamInformation.csv")
+    csv = np.loadtxt("TeamInformation.csv", delimiter= ',', dtype= str)
     st.write(csv)
     
 
