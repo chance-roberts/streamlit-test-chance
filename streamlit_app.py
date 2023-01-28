@@ -23,13 +23,14 @@ def load_csv():
 #calls csv as nparray
 abt = load_csv()
 
-
+testimg = abt[1][0]
 
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
     st.caption(abt.shape)
-    st.image(abt[1,0])
+    
+    st.image(testimg)
     #for i in range abt[i+1:0]:
         #st.image(abt[i+1:0])
         #st.caption("Test")
