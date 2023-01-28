@@ -10,7 +10,7 @@ con.write("Inside container")
 #Designer function to memorize dataframe display.
 #@st.experimental_memo #(show_spinner=True)
 def load_csv():
-    csv = pd.read_csv(filepath_or_buffer="C:\Users\chanc\OneDrive\Documents\GitHub\streamlit-test-chance\TeamInformation.csv")
+    csv = pd.read_csv(filepath_or_buffer="TeamInformation.csv")
     return np.loadtxt(csv)
 
 #Save load_data function into df var. access df in streamlit.
