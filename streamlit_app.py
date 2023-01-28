@@ -29,9 +29,9 @@ abt = load_csv()
 with st.sidebar:
     st.header("Meet the Team")
     st.caption(abt.shape)
-    #for i in abt:
-        #st.image(abt[0,i+1])
-        #st.caption("Test")
+    for i in abt:
+        st.image(abt[i+1:0])
+        st.caption("Test")
 
 
 
