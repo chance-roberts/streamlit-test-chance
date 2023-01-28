@@ -11,7 +11,7 @@ con.write("Inside container")
 #Designer function to memorize dataframe display.
 #@st.experimental_memo #(show_spinner=True)
 def load_csv():
-    return np.loadtxt(pd.read_csv(filepath_or_buffer = "C:/Users/chanc/OneDrive/Documents/GitHub/streamlit-test-chance/TeamInformation.csv"))
+    return np.loadtxt(pd.read_csv("TeamInformation.csv"))
     
     
 
