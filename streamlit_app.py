@@ -44,6 +44,7 @@ with st.sidebar:
     
     #st.image(testimg)
     #picture
+    print("abt", abt)
     for i in range(len(abt)-1):
         url = abt[i+1][0]
         st.image(url)
