@@ -16,7 +16,7 @@ con.write("Inside container")
 
 
 def load_csv():
-    return np.loadtxt("TeamInformation.csv", delimiter= ',', dtype= str)
+    return np.loadtxt("TeamInformation.csv", delimiter= ',', dtype = str)
     
     
 
@@ -45,7 +45,7 @@ with st.sidebar:
     #st.image(testimg)
     
     for i in range(len(abt)):
-        url = abt[i+1:0]
+        url = abt[i+1][0]
         st.image(url)
         st.caption("Test")
 
