@@ -32,7 +32,7 @@ abt = load_csv()
 url = "https://commons.wikimedia.org/wiki/File:Cat03.jpg"
 req_test = requests.get(url)
 #comment
-testimg = Image.open(BytesIO(req_test.content))
+testimg = Image.open((req_test.content))
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
