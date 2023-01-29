@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import os
 import urllib.request
+import requests
+from io import BytesIO
 from PIL import Image
 
 #Container located at top of UI.
@@ -26,8 +28,10 @@ abt = load_csv()
 
 
 urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo","test.jpeg")
+
+req_test = requests.get("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo")
 #comment
-testimg = Image.open("test.jpeg")
+testimg = Image.open(BytesIO(req_test.content))
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
