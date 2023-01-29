@@ -29,16 +29,17 @@ abt = load_csv()
 
 #urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo","test.jpeg")
 #'https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo'
-url = "https://commons.wikimedia.org/wiki/File:Cat03.jpg"
-req_test = requests.get(url)
+#url = "https://commons.wikimedia.org/wiki/File:Cat03.jpg"
+#req_test = requests.get(url)
 #comment
-testimg = Image.open((req_test.content))
+#testimg = Image.open((req_test.content))
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
     st.caption(abt.shape)
+    st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)%22")
+    #st.image(testimg)
     
-    st.image(testimg)
     #for i in range abt[i+1:0]:
         #st.image(abt[i+1:0])
         #st.caption("Test")
