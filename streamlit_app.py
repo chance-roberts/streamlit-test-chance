@@ -38,7 +38,7 @@ with st.sidebar:
     st.header("Meet the Team")
     st.caption(abt.shape)
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
-    st.markdown("![PLZ](https://i.imgur.com/viJ42ZU.jpg")
+    st.markdown("![PLZ](https://i.imgur.com/viJ42ZU.jpg)")
     #TEST
     
     #st.image(testimg)
