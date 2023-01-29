@@ -36,17 +36,17 @@ abt = load_csv()
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
-    st.caption(abt.shape)
+    #st.caption(abt.shape)
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
     #st.markdown("![PLZ]==(https://i.imgur.com/viJ42ZU.jpg)")
-    st.image("https://i.imgur.com/viJ42ZU.jpg")
-    #TEST
+    #st.image("https://i.imgur.com/viJ42ZU.jpg")
+    
     
     #st.image(testimg)
     
-    #for i in range abt[i+1:0]:
-        #st.image(abt[i+1:0])
-        #st.caption("Test")
+    for i in range(len(abt)):
+        st.image(abt[i+1:0])
+        st.caption("Test")
 
 
 
