@@ -39,6 +39,7 @@ with st.sidebar:
     st.caption(abt.shape)
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
     st.markdown("![PLZ](https://imgur.com/viJ42ZU)")
+    #TEST
     
     #st.image(testimg)
     
