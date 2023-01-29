@@ -1,11 +1,5 @@
 import streamlit as st
-import pandas as pd
 import numpy as np
-import os
-import urllib.request
-import requests
-from io import BytesIO
-from PIL import Image
 
 #Container located at top of UI.
 con = st.container()
@@ -51,16 +45,14 @@ with st.sidebar:
         #name
         caption = abt[i+1][1]
         st.caption(caption)
-        #for j in range(len(abt)-1):
-            #caption = abt[i+1][j+1]
-            #st.caption(caption)
+
         
 
 
 
 
 
-#Side bar area.
+
 scrbd = st.expander("Score breakdown")
 comp = st.expander("Comparison")
 scrbd.write("Something")
