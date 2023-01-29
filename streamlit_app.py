@@ -6,29 +6,20 @@ import pandas as pd
 con = st.container()
 con.write("Inside container")
 
-
-
-
+#Load CSV Function - Returns csv as numpy a ndarray
 def load_csv():
     return np.loadtxt("TeamInformation.csv", delimiter= ',', dtype = str)
-    
-    
-
-
-
 
 #calls csv as nparray
 abt = load_csv()
 
-
-
-#Sidebar for Meet the Team
+#Sidebar for Meet the Team - Move to a new page
 with st.sidebar:
     st.title("Meet the Team")
     
     #st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
 
-    #picture
+    #picture and caption loop
     for i in range(len(abt)-1):
         url = abt[i+1][0]
         st.image(url)
