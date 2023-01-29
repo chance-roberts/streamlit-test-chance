@@ -47,9 +47,9 @@ with st.sidebar:
     for i in range(len(abt)):
         url = abt[i+1][0]
         st.image(url)
-        for j in range(len(abt))
-        caption = abt[1][1+j]
-        st.caption(caption)
+        for j in range(len(abt)):
+            caption = abt[1][1+j]
+            st.caption(caption)
 
 
 
