@@ -25,9 +25,9 @@ def load_csv():
 abt = load_csv()
 
 
-urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo/view","test.jpg")
+urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo/view","test.jpeg")
 #comment
-testimg = Image.open("test.jpg")
+testimg = Image.open("test.jpeg")
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
