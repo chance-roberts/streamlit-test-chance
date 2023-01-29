@@ -45,10 +45,10 @@ with st.sidebar:
     #st.image(testimg)
     
     for i in range(len(abt)):
-        count = i+1
-        url = abt[count][0]
-        caption = abt[1][count]
+        url = abt[i+1][0]
         st.image(url)
+        for j in range(len(abt))
+        caption = abt[1][1+j]
         st.caption(caption)
 
 
