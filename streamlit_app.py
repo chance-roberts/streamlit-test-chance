@@ -38,7 +38,7 @@ with st.sidebar:
     st.header("Meet the Team")
     st.caption(abt.shape)
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
-    st.markdown("![Alt Text](https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo/view)")
+    st.markdown("![Alt Text](https://www.dropbox.com/s/qagnwoagyyzmyif/23E8323D-4103-4DC6-9934-C53032F1773D%20-%20Daniel%20Farone.jpeg)")
     
     #st.image(testimg)
     
