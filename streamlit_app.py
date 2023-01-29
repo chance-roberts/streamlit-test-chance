@@ -25,7 +25,7 @@ def load_csv():
 abt = load_csv()
 
 
-urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo/view","test.jpeg")
+urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo","test.jpeg")
 #comment
 testimg = Image.open("test.jpeg")
 #Sidebar for Meet the Team
