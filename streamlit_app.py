@@ -50,7 +50,7 @@ with st.sidebar:
         for j in range(len(abt)):
             caption = abt[1][j+1]
             st.caption(caption)
-
+        st.image(url)
 
 
 
