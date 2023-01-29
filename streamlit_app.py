@@ -35,8 +35,8 @@ abt = load_csv()
 #testimg = Image.open((req_test.content))
 #Sidebar for Meet the Team
 with st.sidebar:
-    st.header("Meet the Team")
-    st.caption(abt.shape)
+    st.title("Meet the Team")
+    
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
     #st.markdown("![PLZ]==(https://i.imgur.com/viJ42ZU.jpg)")
     #st.image("https://i.imgur.com/viJ42ZU.jpg")
