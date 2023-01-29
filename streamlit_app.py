@@ -26,7 +26,7 @@ abt = load_csv()
 with st.sidebar:
     st.title("Meet the Team")
     
-    st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
+    #st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
 
     #picture
     for i in range(len(abt)-1):
