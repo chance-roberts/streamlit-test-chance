@@ -28,8 +28,9 @@ abt = load_csv()
 
 
 #urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo","test.jpeg")
-
-req_test = requests.get(https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo)
+#'https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo'
+url = "https://commons.wikimedia.org/wiki/File:Cat03.jpg"
+req_test = requests.get(url)
 #comment
 testimg = Image.open(BytesIO(req_test.content))
 #Sidebar for Meet the Team
