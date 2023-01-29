@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
+import urllib.request
 from PIL import Image
 
 #Container located at top of UI.
@@ -23,9 +24,10 @@ def load_csv():
 #calls csv as nparray
 abt = load_csv()
 
-testimg = Image.open("testimg.jpeg")
-#comment
 
+urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo/view","test.jpg")
+#comment
+testimg = Image.open("test.jpg")
 #Sidebar for Meet the Team
 with st.sidebar:
     st.header("Meet the Team")
