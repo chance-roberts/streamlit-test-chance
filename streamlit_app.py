@@ -1,18 +1,12 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import os
-import urllib.request
-import requests
-from io import BytesIO
-from PIL import Image
 
 #Container located at top of UI.
 con = st.container()
 con.write("Inside container")
 
-#Designer function to memorize dataframe display.
-#@st.experimental_memo #(show_spinner=True)
+
 
 
 def load_csv():
@@ -27,22 +21,13 @@ def load_csv():
 abt = load_csv()
 
 
-#urllib.request.urlretrieve("https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo","test.jpeg")
-#'https://drive.google.com/file/d/1imkFET1xtuRNesk4uth6G5n1ZMblrVBo'
-#url = "https://commons.wikimedia.org/wiki/File:Cat03.jpg"
-#req_test = requests.get(url)
-#comment
-#testimg = Image.open((req_test.content))
+
 #Sidebar for Meet the Team
 with st.sidebar:
     st.title("Meet the Team")
     
     st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
-    #st.markdown("![PLZ]==(https://i.imgur.com/viJ42ZU.jpg)")
-    #st.image("https://i.imgur.com/viJ42ZU.jpg")
-    
-    
-    #st.image(testimg)
+
     #picture
     for i in range(len(abt)-1):
         url = abt[i+1][0]
@@ -50,9 +35,7 @@ with st.sidebar:
         #name
         caption = abt[i+1][1]
         st.caption(caption)
-        #for j in range(len(abt)-1):
-            #caption = abt[i+1][j+1]
-            #st.caption(caption)
+
         
 
 
